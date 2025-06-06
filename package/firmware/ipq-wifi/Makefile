@@ -28,6 +28,7 @@ endef
 
 ALLWIFIBOARDS:= \
 	8devices_mango \
+	aliyun_ap4220 \
 	alfa-network_ap120c-ax \
 	aliyun_ap8220 \
 	arcadyan_aw1000 \
@@ -193,6 +194,7 @@ endef
 #   board-<devicename>.<qca4019|qca9888|qca9889|qca9984|qca99x0|ipq6018|ipq8074>
 
 $(eval $(call generate-ipq-wifi-package,8devices_mango,8devices Mango))
+$(eval $(call generate-ipq-wifi-package,aliyun_ap4220,Aliyun AP4220))
 $(eval $(call generate-ipq-wifi-package,alfa-network_ap120c-ax,ALFA Network AP120C-AX))
 $(eval $(call generate-ipq-wifi-package,aliyun_ap8220,Aliyun AP8220))
 $(eval $(call generate-ipq-wifi-package,arcadyan_aw1000,Arcadyan AW1000))
